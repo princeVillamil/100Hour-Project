@@ -1,0 +1,206 @@
+.containerTwo{
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../../images/low-poly-grid-haikei.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.menuContainer{
+  max-width: 1400px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0px 10px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.menuContainer h1{
+  font-size: 80px;
+  width: 100%;
+  font-family: 'Cabin Sketch', cursive;
+
+}
+.menuContainer > h1 span:nth-child(1){
+  color: #E80920;
+}
+.menuContainer > h1 span:nth-child(2){
+  color: #F2670A;
+}
+.menuContainer > h1 span:nth-child(3){
+  color: #F3FF17;
+}
+.menuContainer > h1 span:nth-child(4){
+  color: #1DBF38;
+}
+.menuContainer > h1 span:nth-child(5){
+  color: #23C7E8;
+}
+.menuContainer > h1 span:nth-child(6){
+  color: #2816F2;
+}
+.menuContainer > h1 span:nth-child(7){
+  color: #C709ED;
+}
+.menuContainer > h1 span:nth-child(8){
+  color: #FFFFFF;
+}
+.menuContainer > h1 span:nth-child(9){
+  color: #FFFFFF;
+}
+
+
+.menuOptions{
+  display: flex;
+  gap: 50px;
+  /* outline: 1px dotted red; */
+  max-width: 1100px;
+  margin: 30px auto;
+}
+.LMenu{
+  position: relative;
+  flex: 1;
+  min-width: 377px;
+  height: fit-content;
+  background-color: #FFFFFF;
+  padding: 15px 8px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 15px; */
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.5);
+}
+.LMenuProfile{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.menuOptions img{
+  overflow: hidden;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.5);
+}
+.LMenuProfileSettings{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 24px;
+  
+}
+.setting{
+  fill: #000000;
+  opacity: 0.5;
+}
+
+.LMenuControlls{
+  margin: 30px 0 0 0;
+  
+}
+.LMenuControlls > button{
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+  width: 100%;
+}
+.LMenuControlls > button:focus{
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+.LMenuControlls > button{
+  background-color: #5cb85c;
+  border: #4cae4c;
+  margin-bottom: 5px;
+}
+.LMenuControlls > button:hover{
+  background-color: #449d44;
+  border-color: #398439;
+}
+.LMenuProfileDetails{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.select{
+  position: relative;
+}
+
+.select select{
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  color: #555;
+  padding: 5px 5px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.select label{
+  padding-left: 5px;
+}
+.select select:focus{
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+.checkBox{
+  display: block;
+  margin: 10px 0 0 0;
+  position: relative;
+
+}
+.checkBox input{
+  opacity: 0;
+}
+.checkBox label{
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.checkBoxShow{
+  position: absolute;
+  left: 80px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.5);
+}
+.checkBox input:checked ~ .checkBoxShow{
+  width: 20px;
+  height: 20px;
+  background-color: #449d44;
+}
+
+
+.RMenu{
+  flex: 2;
+  padding: 15px 8px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.151);
+}
+.RMenu h3{
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+}

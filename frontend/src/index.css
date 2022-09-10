@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  text-decoration: none;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+
+
+/* container */
+.container{
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(./images/low-poly-grid-haikei.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Home */
+.homeContainer{
+  max-width: 490px;
+  margin: 40px auto;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.homeContainer h1{
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Cabin Sketch', cursive;
+
+}
+.homeContainer > h1 span:nth-child(1){
+  color: #E80920;
+}
+.homeContainer > h1 span:nth-child(2){
+  color: #F2670A;
+}
+.homeContainer > h1 span:nth-child(3){
+  color: #F3FF17;
+}
+.homeContainer > h1 span:nth-child(4){
+  color: #1DBF38;
+}
+.homeContainer > h1 span:nth-child(5){
+  color: #23C7E8;
+}
+.homeContainer > h1 span:nth-child(6){
+  color: #2816F2;
+}
+.homeContainer > h1 span:nth-child(7){
+  color: #C709ED;
+}
+.homeContainer > h1 span:nth-child(8){
+  color: #FFFFFF;
+}
+.homeContainer > h1 span:nth-child(9){
+  color: #FFFFFF;
+}
+
+.homeBox{
+  margin: 20px 0 0 0;
+  background-color: #FFFFFF;
+  padding: 15px 8px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 15px; */
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.5);
+}
+.setting{
+  color: black;
+  cursor: pointer;
+}
+.setting:hover{
+  color: rgb(63, 63, 63);
+}
+.homeInput{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5px;  
+  margin-bottom: 15px;
+}
+.homeInput input{
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  color: #555;
+  padding: 3px 5px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.homeInput label{
+  padding-left: 5px;
+}
+.homeInput input:focus{
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+.homeBox button, .homeBox a{
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+}
+.homeBox button:focus, .homeBox a:focus{
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+.homeBox button{
+  background-color: #5cb85c;
+  border: #4cae4c;
+  margin-bottom: 5px;
+}
+.homeBox button:hover{
+  background-color: #449d44;
+  border-color: #398439;
+}
+.homeBox a{
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.homeBox a:hover{
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+
+
+/* Error */
+.error{
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  padding: 15px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.5);
+}
+.error h6{
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.1;
+}
+.error span{
+  background-color: #BAFFAA;
+  border-radius: 2px;
+  padding: 10px;
+  border: 1px solid #90EA7C;
+  color: #105B00;
+}
