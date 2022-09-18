@@ -1,0 +1,247 @@
+.containerTwo{
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../../images/low-poly-grid-haikei.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.gameContainer{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  max-width: 1600px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0px 10px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.gameContainer h1{
+  font-size: 80px;
+  width: 100%;
+  font-family: 'Cabin Sketch', cursive;
+
+}
+.gameContainer > h1 span:nth-child(1){
+  color: #E80920;
+}
+.gameContainer > h1 span:nth-child(2){
+  color: #F2670A;
+}
+.gameContainer > h1 span:nth-child(3){
+  color: #F3FF17;
+}
+.gameContainer > h1 span:nth-child(4){
+  color: #1DBF38;
+}
+.gameContainer > h1 span:nth-child(5){
+  color: #23C7E8;
+}
+.gameContainer > h1 span:nth-child(6){
+  color: #2816F2;
+}
+.gameContainer > h1 span:nth-child(7){
+  color: #C709ED;
+}
+.gameContainer > h1 span:nth-child(8){
+  color: #FFFFFF;
+}
+.gameContainer > h1 span:nth-child(9){
+  color: #FFFFFF;
+}
+
+
+
+
+.gameTopBar{
+  display: flex;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 rgba(100,100,100,.5);
+  padding: 15px 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+/* .gameTopBar > *{
+  outline: 1px dotted black;
+} */
+
+.gameLeft{
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.gameTime{
+  font-size: 30px;
+  font-weight: bold;
+}
+.gameMiddle h2{
+  font-size: 25px;
+  font-weight: bolder;
+}
+.gameRight a{
+  color: white;
+  border-radius: 2px;
+  padding: 5px 10px;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+.gameUI{
+  display: flex;
+  gap: 10px;
+  /* outline: 1px dotted red; */
+  min-height: 580px;
+
+}
+.gameUI > *{
+  /* outline: 1px dotted black; */
+  /* max-height: 630px; */
+  /* min-height: 100%; */
+}
+.GamePlayerList{
+  flex: 1;
+  /* border-radius: 2px; */
+  position: relative;
+}
+.GamePlayerList > a{
+  position: absolute;
+  border-radius: 2px;
+  right: 5px;
+  bottom: 5px;
+  background-color: #F0AD4E;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.5);
+  padding: 8px 10px;
+  color: white;
+  transition: 0.0.8s ease-in-out;
+  
+}
+.GamePlayerList > a:hover{
+  background-color: #E80920;
+}
+.GamePlayerList .gamePlayerContainer{
+  border-radius: 2px;
+  overflow: hidden;
+}
+.GamePlayerList .playerInfo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+}
+.GamePlayerList .playerInfo:nth-child(odd){
+  background-color: #EEEEEE;
+}
+.GamePlayerList .playerInfo:nth-child(even){
+  background-color: #FFFFFF;
+}
+.GamePlayerList .playerName{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.GamePlayerList img{
+  overflow: hidden;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  outline: 1px dotted red;
+  /* box-shadow: 0 0 4px 0 rgba(0,0,0,.5); */
+}
+
+
+
+
+.GameDraw{
+  flex: 3;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 rgba(100,100,100,.5);
+  padding: 15px 25px;
+}
+
+
+
+
+
+
+
+.GameChat{
+  flex: 1;
+}
+.GameChat{
+  flex: 2;
+  border-radius: 2.5px;
+  background: #EEEEEE;  
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-between;
+  box-shadow: 0 0 4px 0 rgba(100,100,100,.5);
+  max-width: 325px;
+  overflow-x: hidden;
+
+}
+.GameChat input{
+  border-radius: 2.5px;
+  border: 1px solid #d3d3d3;
+  padding: 10px 15px;
+}
+.GameChat input:focus{
+  outline: none;
+}
+.chatBox{
+  display: flex;
+  flex-direction: column;
+  /* background: red !important; */
+  gap: 5px;
+  max-width: 538px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+}
+.chatBox>span{
+  padding: 5px 10px;
+  border-radius: 2.5px;
+  /* word-break: break-all */
+  overflow-wrap: break-word;
+  font-size: 15px;
+}
+.chatBox>span:nth-child(even){
+  background-color: #EEEEEE;
+}
+.chatBox>span:nth-child(odd){
+  background-color: white;
+}
+
+
+
+
+.sendGuess{
+  /* outline: 1px dotted red; */
+  display: flex;
+}
+.sendGuess input{
+  width: 100%;
+  border-right: none;
+  border-left: 2px;
+  border: none;
+  border-radius: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.sendGuess button{
+  padding: 0 15px;
+  border: none;
+  border-radius: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+  cursor: pointer;
+}

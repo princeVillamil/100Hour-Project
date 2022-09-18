@@ -71,6 +71,8 @@ function Menu() {
           <div className="RMenu">
             <h3>Public Rooms</h3>
             <PublicRooms/>
+            <PublicRooms/>
+
           </div>
         </div>
       </div>
